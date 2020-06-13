@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/ASUS_20191009/LeetCode/C++/problem0001.cpp
+iostream
+-
+iomanip
+-
+vector
+-
+map
+-
+algorithm
+-
+windows.h
+-
+cmath
+-
+cstdlib
+-
+ctime
+-
+

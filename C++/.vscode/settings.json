@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.cpp": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "random": "cpp",
+        "cmath": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "iomanip": "cpp",
+        "algorithm": "cpp"
+    }
+}
+
+// "code-runner.executorMap":{
+//     "cpp": "chcp 65001 && cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+// }
