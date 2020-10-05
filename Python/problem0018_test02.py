@@ -7,7 +7,7 @@ class Solution:
         nums.sort()
         ans = []
 
-        for first in range(0, len(nums), 1):
+        for first in range(0, len(nums), 1): #因为数组是排好序的，所以没有出现重复
             if nums[first] == nums[first - 1] and first > 0:
                 continue
 
