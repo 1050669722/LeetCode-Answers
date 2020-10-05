@@ -3,10 +3,10 @@ class Solution:
         if len(nums) < 3:
             return []
         
-        nums.sort()
+        nums.sort() #排序，则重复元素必出现在相邻位置
         ans = []
 
-        for first in range(0, len(nums), 1):
+        for first in range(0, len(nums), 1): #排序和双指针，去除了一层复杂度
             if nums[first] == nums[first - 1] and first > 0:
                 continue
             
