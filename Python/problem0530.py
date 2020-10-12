@@ -31,8 +31,8 @@ class Solution:
         for i, num in enumerate(nums):
             if i != 0:
                 ans = min(num - nums[i - 1], ans)
-            if i != len(nums) - 1:
-                ans = min(nums[i + 1] - num, ans)
+            # if i != len(nums) - 1:
+                # ans = min(nums[i + 1] - num, ans)
 
         return ans
 
