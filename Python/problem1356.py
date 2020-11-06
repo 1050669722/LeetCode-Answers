@@ -7,7 +7,7 @@ class Solution:
                 num //= 2
             return cnt
 
-        def bit(num):
+        def bit(num): #递推对应递归，需要写退出条件
             if num == 0:
                 return 0
             return bit(num >> 1) + (num & 1)
@@ -26,4 +26,3 @@ class Solution:
         arr.sort(key=lambda x: x[1])
 
         return [a[0] for a in arr]
-        
