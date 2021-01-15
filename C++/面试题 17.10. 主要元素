@@ -1,0 +1,25 @@
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        map<int, int> m;
+        for (vector<int>::iterator it = nums.begin(); it < nums.end(); ++it)
+        {
+            if (m.find(*it) != m.end())
+            {
+                m[*it] += 1;
+            }
+            else
+            {
+                m.insert(pair<int, int>(*it, 1));
+            }
+        }
+        for (map<int, int>::iterator it = m.begin(); it != m.end(); ++it)
+        {
+            if (it->second > nums.size() / 2)
+            {
+                return (*it).first;
+            }
+        }
+        return -1;
+    }
+};
